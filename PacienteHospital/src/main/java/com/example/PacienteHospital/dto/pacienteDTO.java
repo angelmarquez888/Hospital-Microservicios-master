@@ -1,24 +1,18 @@
-package com.example.PacienteHospital.model;
+package com.example.PacienteHospital.dto;
 
-import java.time.LocalDate;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
-@Table(name = "pacientes")
+import java.time.LocalDate;
+
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class pacienteModel {
-    @Id
-    @GeneratedValue
+public class pacienteDTO {
+
     private Long idPaciente;
     private Integer rut;
     private String dv;
@@ -29,5 +23,4 @@ public class pacienteModel {
     private String direccion;
     private String telefono;
     private String email;
-
 }

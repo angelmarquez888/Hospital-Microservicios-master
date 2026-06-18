@@ -1,32 +1,21 @@
-package com.example.HoraHospital.model;
+package com.example.HoraHospital.dto;
 
 import java.time.LocalDateTime;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
-@Table(name = "horas_medicas")
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class horaModel {
-    @Id
-    @GeneratedValue
+public class horaDTO {
+
     private Long idHora;
     private LocalDateTime fechaHora;
     private String medico;
     private String especialidad;
     private String estado;
-
-
-
-
 }

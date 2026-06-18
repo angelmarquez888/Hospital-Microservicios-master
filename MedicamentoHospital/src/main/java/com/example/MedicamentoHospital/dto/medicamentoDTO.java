@@ -1,29 +1,21 @@
-package com.example.MedicamentoHospital.model;
+package com.example.MedicamentoHospital.dto;
 
 import java.time.LocalDate;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
-@Table(name = "medicamentos")
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class medicamentoModel {
-    @Id
-    @GeneratedValue
+public class medicamentoDTO {
+
     private Long idMedicamento;
     private String nombre;
     private String principioActivo;
     private Integer stockDisponible;
     private LocalDate fechaVencimiento;
-
 }

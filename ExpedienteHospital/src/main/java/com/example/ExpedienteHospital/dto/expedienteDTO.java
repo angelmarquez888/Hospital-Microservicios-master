@@ -1,27 +1,18 @@
-package com.example.ExpedienteHospital.model;
+package com.example.ExpedienteHospital.dto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
-@Table(name = "expedientes_clinicos")
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class expedienteModel {
-    @Id
-    @GeneratedValue
+public class expedienteDTO {
+
     private Long idExpediente;
     private String tipoSangre;
     private String alergias;
     private String enfermedadesCronicas;
-
-
 }
