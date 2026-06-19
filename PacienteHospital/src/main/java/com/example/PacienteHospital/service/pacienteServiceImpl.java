@@ -1,5 +1,6 @@
 package com.example.PacienteHospital.service;
 
+import com.example.PacienteHospital.exception.ResourceNotFoundException;
 import com.example.PacienteHospital.dto.pacienteDTO;
 import com.example.PacienteHospital.model.pacienteModel;
 import com.example.PacienteHospital.repository.pacienteRepository;
@@ -20,7 +21,7 @@ public class pacienteServiceImpl implements pacienteService {
     @Override
     public pacienteDTO crear(pacienteDTO pacienteDTO) {
         if (pacienteRepository.existsByRut(pacienteDTO.getRut())) {
-            throw new RuntimeException("Ya existe un paciente registrado con el RUT: " + pacienteDTO.getRut());
+            throw new IllegalArgumentException("Ya existe un paciente registrado con el RUT: " + pacienteDTO.getRut());
         }
         pacienteModel entidad = mapearAEntidad(pacienteDTO);
         pacienteModel guardado = pacienteRepository.save(entidad);
@@ -64,7 +65,7 @@ public class pacienteServiceImpl implements pacienteService {
 
     private pacienteModel buscarEntidadPorId(Long id) {
         return pacienteRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Paciente no encontrado con id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Paciente no encontrado con id: " + id));
     }
 
     private pacienteDTO mapearADto(pacienteModel entidad) {

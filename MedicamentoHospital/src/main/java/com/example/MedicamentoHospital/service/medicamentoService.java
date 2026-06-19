@@ -5,6 +5,7 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
+import com.example.MedicamentoHospital.exception.ResourceNotFoundException;
 import com.example.MedicamentoHospital.dto.medicamentoDTO;
 import com.example.MedicamentoHospital.model.medicamentoModel;
 import com.example.MedicamentoHospital.repository.medicamentoRepository;
@@ -17,7 +18,6 @@ public class medicamentoService {
 
     private final medicamentoRepository medicamentoRepository;
 
-
     public List<medicamentoDTO> listarTodos() {
         return medicamentoRepository.findAll()
                 .stream()
@@ -25,13 +25,11 @@ public class medicamentoService {
                 .collect(Collectors.toList());
     }
 
-
     public medicamentoDTO buscarPorId(Long id) {
         medicamentoModel medicamento = medicamentoRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Medicamento no encontrado con id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Medicamento no encontrado con id: " + id));
         return convertirADTO(medicamento);
     }
-
 
     public medicamentoDTO guardar(medicamentoDTO dto) {
         medicamentoModel medicamento = convertirAModel(dto);
@@ -39,10 +37,9 @@ public class medicamentoService {
         return convertirADTO(guardado);
     }
 
-
     public medicamentoDTO actualizar(Long id, medicamentoDTO dto) {
         medicamentoModel medicamento = medicamentoRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Medicamento no encontrado con id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Medicamento no encontrado con id: " + id));
 
         medicamento.setNombre(dto.getNombre());
         medicamento.setPrincipioActivo(dto.getPrincipioActivo());
@@ -53,14 +50,12 @@ public class medicamentoService {
         return convertirADTO(actualizado);
     }
 
-
     public void eliminar(Long id) {
         if (!medicamentoRepository.existsById(id)) {
-            throw new RuntimeException("Medicamento no encontrado con id: " + id);
+            throw new ResourceNotFoundException("Medicamento no encontrado con id: " + id);
         }
         medicamentoRepository.deleteById(id);
     }
-
 
     private medicamentoDTO convertirADTO(medicamentoModel medicamento) {
         return medicamentoDTO.builder()
@@ -71,7 +66,6 @@ public class medicamentoService {
                 .fechaVencimiento(medicamento.getFechaVencimiento())
                 .build();
     }
-
 
     private medicamentoModel convertirAModel(medicamentoDTO dto) {
         return medicamentoModel.builder()

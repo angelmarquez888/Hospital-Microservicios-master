@@ -1,5 +1,6 @@
 package com.example.ExamenHospital.service;
 
+import com.example.ExamenHospital.exception.ResourceNotFoundException;
 import com.example.ExamenHospital.dto.examenDTO;
 import com.example.ExamenHospital.model.examenModel;
 import com.example.ExamenHospital.repository.examenRepository;
@@ -24,7 +25,7 @@ public class examenService {
 
     public examenDTO getExamenById(Long id) {
         examenModel examen = repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Examen no encontrado con id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Examen no encontrado con id: " + id));
         return toDTO(examen);
     }
 
@@ -36,7 +37,7 @@ public class examenService {
 
     public examenDTO updateExamen(Long id, examenDTO dto) {
         examenModel examen = repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Examen no encontrado con id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Examen no encontrado con id: " + id));
 
         examen.setTipoExamen(dto.getTipoExamen());
         examen.setFecha(dto.getFecha());
@@ -49,7 +50,7 @@ public class examenService {
 
     public void deleteExamen(Long id) {
         if (!repository.existsById(id)) {
-            throw new RuntimeException("Examen no encontrado con id: " + id);
+            throw new ResourceNotFoundException("Examen no encontrado con id: " + id);
         }
         repository.deleteById(id);
     }

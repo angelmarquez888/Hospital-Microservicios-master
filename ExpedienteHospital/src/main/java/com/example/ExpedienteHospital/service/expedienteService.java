@@ -5,6 +5,7 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
+import com.example.ExpedienteHospital.exception.ResourceNotFoundException;
 import com.example.ExpedienteHospital.dto.expedienteDTO;
 import com.example.ExpedienteHospital.model.expedienteModel;
 import com.example.ExpedienteHospital.repository.expedienteRepository;
@@ -17,7 +18,6 @@ public class expedienteService {
 
     private final expedienteRepository expedienteRepository;
 
-
     public List<expedienteDTO> listarTodos() {
         return expedienteRepository.findAll()
                 .stream()
@@ -25,13 +25,11 @@ public class expedienteService {
                 .collect(Collectors.toList());
     }
 
-
     public expedienteDTO buscarPorId(Long id) {
         expedienteModel expediente = expedienteRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Expediente no encontrado con id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Expediente no encontrado con id: " + id));
         return convertirADTO(expediente);
     }
-
 
     public expedienteDTO guardar(expedienteDTO dto) {
         expedienteModel expediente = convertirAModel(dto);
@@ -39,10 +37,9 @@ public class expedienteService {
         return convertirADTO(guardado);
     }
 
-
     public expedienteDTO actualizar(Long id, expedienteDTO dto) {
         expedienteModel expediente = expedienteRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Expediente no encontrado con id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Expediente no encontrado con id: " + id));
 
         expediente.setTipoSangre(dto.getTipoSangre());
         expediente.setAlergias(dto.getAlergias());
@@ -52,14 +49,12 @@ public class expedienteService {
         return convertirADTO(actualizado);
     }
 
-
     public void eliminar(Long id) {
         if (!expedienteRepository.existsById(id)) {
-            throw new RuntimeException("Expediente no encontrado con id: " + id);
+            throw new ResourceNotFoundException("Expediente no encontrado con id: " + id);
         }
         expedienteRepository.deleteById(id);
     }
-
 
     private expedienteDTO convertirADTO(expedienteModel expediente) {
         return expedienteDTO.builder()
@@ -69,7 +64,6 @@ public class expedienteService {
                 .enfermedadesCronicas(expediente.getEnfermedadesCronicas())
                 .build();
     }
-
 
     private expedienteModel convertirAModel(expedienteDTO dto) {
         return expedienteModel.builder()

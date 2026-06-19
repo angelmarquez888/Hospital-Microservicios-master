@@ -1,5 +1,6 @@
 package com.example.AmbulanciaHospital.service;
 
+import com.example.AmbulanciaHospital.exception.ResourceNotFoundException;
 import com.example.AmbulanciaHospital.dto.ambulanciaDTO;
 import com.example.AmbulanciaHospital.model.ambulanciaModel;
 import com.example.AmbulanciaHospital.repository.ambulanciaRepository;
@@ -35,20 +36,17 @@ public class ambulanciaService {
                 .build();
     }
 
-
     public List<ambulanciaDTO> getAllAmbulancias() {
         return ambulanciaRepository.findAll().stream()
                 .map(this::mapToDTO)
                 .collect(Collectors.toList());
     }
 
-
     public ambulanciaDTO getAmbulanciaById(Long id) {
         ambulanciaModel ambulancia = ambulanciaRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Ambulancia no encontrada con ID: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Ambulancia no encontrada con ID: " + id));
         return mapToDTO(ambulancia);
     }
-
 
     public ambulanciaDTO createAmbulancia(ambulanciaDTO ambulanciaDTO) {
         ambulanciaModel ambulancia = mapToEntity(ambulanciaDTO);
@@ -56,10 +54,9 @@ public class ambulanciaService {
         return mapToDTO(nuevaAmbulancia);
     }
 
-
     public ambulanciaDTO updateAmbulancia(Long id, ambulanciaDTO ambulanciaDTO) {
         ambulanciaModel ambulancia = ambulanciaRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Ambulancia no encontrada con ID: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Ambulancia no encontrada con ID: " + id));
 
         ambulancia.setPatente(ambulanciaDTO.getPatente());
         ambulancia.setTipo(ambulanciaDTO.getTipo());
@@ -70,8 +67,10 @@ public class ambulanciaService {
         return mapToDTO(ambulanciaActualizada);
     }
 
-
     public void deleteAmbulancia(Long id) {
+        if (!ambulanciaRepository.existsById(id)) {
+            throw new ResourceNotFoundException("Ambulancia no encontrada con ID: " + id);
+        }
         ambulanciaRepository.deleteById(id);
     }
 }

@@ -1,5 +1,6 @@
 package com.example.TurnoHospital.service;
 
+import com.example.TurnoHospital.exception.ResourceNotFoundException;
 import com.example.TurnoHospital.dto.turnoDTO;
 import com.example.TurnoHospital.model.turnoModel;
 import com.example.TurnoHospital.repository.turnoRepository;
@@ -26,7 +27,7 @@ public class turnoServiceImpl implements turnoService {
     @Override
     public turnoDTO obtenerPorId(Long id) {
         turnoModel turno = turnoRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Turno no encontrado con id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Turno no encontrado con id: " + id));
         return convertirADTO(turno);
     }
 
@@ -43,7 +44,7 @@ public class turnoServiceImpl implements turnoService {
         validarHorario(turnoDTO);
 
         turnoModel turnoExistente = turnoRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Turno no encontrado con id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Turno no encontrado con id: " + id));
 
         turnoExistente.setRutEmpleado(turnoDTO.getRutEmpleado());
         turnoExistente.setArea(turnoDTO.getArea());
@@ -55,6 +56,9 @@ public class turnoServiceImpl implements turnoService {
 
     @Override
     public void eliminar(Long id) {
+        if (!turnoRepository.existsById(id)) {
+            throw new ResourceNotFoundException("Turno no encontrado con id: " + id);
+        }
         turnoRepository.deleteById(id);
     }
 
@@ -74,15 +78,12 @@ public class turnoServiceImpl implements turnoService {
                 .collect(Collectors.toList());
     }
 
-    // Regla de negocio: el fin del turno debe ser posterior al inicio
     private void validarHorario(turnoDTO turnoDTO) {
         if (turnoDTO.getInicioTurno() != null && turnoDTO.getFinTurno() != null
                 && !turnoDTO.getFinTurno().isAfter(turnoDTO.getInicioTurno())) {
             throw new IllegalArgumentException("La hora de fin del turno debe ser posterior a la hora de inicio");
         }
     }
-
-    // Métodos de conversión entre Entity y DTO
 
     private turnoDTO convertirADTO(turnoModel turno) {
         return turnoDTO.builder()

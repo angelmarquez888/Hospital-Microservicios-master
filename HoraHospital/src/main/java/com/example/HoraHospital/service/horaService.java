@@ -5,6 +5,7 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
+import com.example.HoraHospital.exception.ResourceNotFoundException;
 import com.example.HoraHospital.dto.horaDTO;
 import com.example.HoraHospital.model.horaModel;
 import com.example.HoraHospital.repository.horaRepository;
@@ -17,7 +18,6 @@ public class horaService {
 
     private final horaRepository horaRepository;
 
-
     public List<horaDTO> listarTodos() {
         return horaRepository.findAll()
                 .stream()
@@ -25,13 +25,11 @@ public class horaService {
                 .collect(Collectors.toList());
     }
 
-
     public horaDTO buscarPorId(Long id) {
         horaModel hora = horaRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Hora no encontrada con id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Hora no encontrada con id: " + id));
         return convertirADTO(hora);
     }
-
 
     public horaDTO guardar(horaDTO dto) {
         horaModel hora = convertirAModel(dto);
@@ -39,10 +37,9 @@ public class horaService {
         return convertirADTO(guardado);
     }
 
-
     public horaDTO actualizar(Long id, horaDTO dto) {
         horaModel hora = horaRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Hora no encontrada con id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Hora no encontrada con id: " + id));
 
         hora.setFechaHora(dto.getFechaHora());
         hora.setMedico(dto.getMedico());
@@ -53,14 +50,12 @@ public class horaService {
         return convertirADTO(actualizado);
     }
 
-
     public void eliminar(Long id) {
         if (!horaRepository.existsById(id)) {
-            throw new RuntimeException("Hora no encontrada con id: " + id);
+            throw new ResourceNotFoundException("Hora no encontrada con id: " + id);
         }
         horaRepository.deleteById(id);
     }
-
 
     private horaDTO convertirADTO(horaModel hora) {
         return horaDTO.builder()
@@ -71,7 +66,6 @@ public class horaService {
                 .estado(hora.getEstado())
                 .build();
     }
-
 
     private horaModel convertirAModel(horaDTO dto) {
         return horaModel.builder()

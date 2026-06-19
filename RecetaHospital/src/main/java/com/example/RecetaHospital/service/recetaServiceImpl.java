@@ -1,5 +1,6 @@
 package com.example.RecetaHospital.service;
 
+import com.example.RecetaHospital.exception.ResourceNotFoundException;
 import com.example.RecetaHospital.model.recetaModel;
 import com.example.RecetaHospital.repository.recetaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,7 @@ public class recetaServiceImpl implements recetaService {
     @Override
     public recetaModel obtenerPorId(Long id) {
         return recetaRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Receta no encontrada con id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Receta no encontrada con id: " + id));
     }
 
     @Override
@@ -48,6 +49,9 @@ public class recetaServiceImpl implements recetaService {
 
     @Override
     public void eliminar(Long id) {
+        if (!recetaRepository.existsById(id)) {
+            throw new ResourceNotFoundException("Receta no encontrada con id: " + id);
+        }
         recetaRepository.deleteById(id);
     }
 }
