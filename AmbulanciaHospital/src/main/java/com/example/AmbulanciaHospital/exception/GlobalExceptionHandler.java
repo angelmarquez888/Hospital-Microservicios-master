@@ -1,4 +1,4 @@
-package com.example.AlertaHospital.exception;
+package com.example.AmbulanciaHospital.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

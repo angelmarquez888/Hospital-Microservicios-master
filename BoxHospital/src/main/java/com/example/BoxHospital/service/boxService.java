@@ -1,5 +1,6 @@
 package com.example.BoxHospital.service;
 
+import com.example.BoxHospital.exception.ResourceNotFoundException;
 import com.example.BoxHospital.dto.boxDTO;
 import com.example.BoxHospital.model.boxModel;
 import com.example.BoxHospital.repository.boxRepository;
@@ -24,7 +25,7 @@ public class boxService {
 
     public boxDTO getBoxById(Long id) {
         boxModel box = repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Box no encontrado con id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Box no encontrado con id: " + id));
         return toDTO(box);
     }
 
@@ -36,7 +37,7 @@ public class boxService {
 
     public boxDTO updateBox(Long id, boxDTO dto) {
         boxModel box = repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Box no encontrado con id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Box no encontrado con id: " + id));
 
         box.setNumeroSector(dto.getNumeroSector());
         box.setTipo(dto.getTipo());
@@ -48,7 +49,7 @@ public class boxService {
 
     public void deleteBox(Long id) {
         if (!repository.existsById(id)) {
-            throw new RuntimeException("Box no encontrado con id: " + id);
+            throw new ResourceNotFoundException("Box no encontrado con id: " + id);
         }
         repository.deleteById(id);
     }

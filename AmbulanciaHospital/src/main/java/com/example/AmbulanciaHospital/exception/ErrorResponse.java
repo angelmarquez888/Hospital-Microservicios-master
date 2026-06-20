@@ -1,5 +1,4 @@
-package com.example.AlertaHospital.exception;
-
+package com.example.AmbulanciaHospital.exception;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

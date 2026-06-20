@@ -1,0 +1,64 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: ambulancias-service
+          uri: lb://AmbulanciaHospital
+          predicates:
+            - Path=/api/ambulancias/**
+
+        - id: alertas-service
+          uri: lb://AlertaHospital
+          predicates:
+            - Path=/api/alertas/**
+
+        - id: box-service
+          uri: lb://BoxHospital
+          predicates:
+            - Path=/api/boxes/**
+
+        - id: examen-service
+          uri: lb://ExamenHospital
+          predicates:
+            - Path=/api/examenes/**
+
+        - id: expediente-service
+          uri: lb://ExpedienteHospital
+          predicates:
+            - Path=/api/expedientes/**
+
+        - id: hora-service
+          uri: lb://HoraHospital
+          predicates:
+            - Path=/api/horas/**
+
+        - id: medicamento-service
+          uri: lb://MedicamentoHospital
+          predicates:
+            - Path=/api/medicamentos/**
+
+        - id: paciente-service
+          uri: lb://PacienteHospital
+          predicates:
+            - Path=/api/pacientes/**
+
+        - id: receta-service
+          uri: lb://RecetaHospital
+          predicates:
+            - Path=/api/recetas/**
+
+        - id: turno-service
+          uri: lb://TurnoHospital
+          predicates:
+            - Path=/api/turnos/**
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
