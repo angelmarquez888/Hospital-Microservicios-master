@@ -1,18 +1,18 @@
 package com.example.RecetaHospital.service;
 
-import com.example.RecetaHospital.model.recetaModel;
+import com.example.RecetaHospital.dto.recetaDTO;
 
 import java.util.List;
 
 public interface recetaService {
 
-    List<recetaModel> obtenerTodas();
+    List<recetaDTO> obtenerTodas();
 
-    recetaModel obtenerPorId(Long id);
+    recetaDTO obtenerPorId(Long id);
 
-    recetaModel guardar(recetaModel receta);
+    recetaDTO guardar(recetaDTO receta);
 
-    recetaModel actualizar(Long id, recetaModel receta);
+    recetaDTO actualizar(Long id, recetaDTO receta);
 
     void eliminar(Long id);
 }

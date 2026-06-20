@@ -1,6 +1,6 @@
 package com.example.RecetaHospital.controller;
 
-import com.example.RecetaHospital.model.recetaModel;
+import com.example.RecetaHospital.dto.recetaDTO;
 import com.example.RecetaHospital.service.recetaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,23 +17,23 @@ public class recetaController {
     private recetaService recetaService;
 
     @GetMapping
-    public ResponseEntity<List<recetaModel>> obtenerTodas() {
+    public ResponseEntity<List<recetaDTO>> obtenerTodas() {
         return ResponseEntity.ok(recetaService.obtenerTodas());
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<recetaModel> obtenerPorId(@PathVariable Long id) {
+    public ResponseEntity<recetaDTO> obtenerPorId(@PathVariable Long id) {
         return ResponseEntity.ok(recetaService.obtenerPorId(id));
     }
 
     @PostMapping
-    public ResponseEntity<recetaModel> crear(@RequestBody recetaModel receta) {
-        recetaModel nuevaReceta = recetaService.guardar(receta);
+    public ResponseEntity<recetaDTO> crear(@RequestBody recetaDTO receta) {
+        recetaDTO nuevaReceta = recetaService.guardar(receta);
         return ResponseEntity.status(HttpStatus.CREATED).body(nuevaReceta);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<recetaModel> actualizar(@PathVariable Long id, @RequestBody recetaModel receta) {
+    public ResponseEntity<recetaDTO> actualizar(@PathVariable Long id, @RequestBody recetaDTO receta) {
         return ResponseEntity.ok(recetaService.actualizar(id, receta));
     }
 
