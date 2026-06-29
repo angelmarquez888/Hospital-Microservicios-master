@@ -1,0 +1,150 @@
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.example:MedicamentoHospital >-------------------
+[INFO] Building MedicamentoHospital 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ MedicamentoHospital ---
+[INFO] Deleting C:\Users\javie\Downloads\Hospital-Microservicios-master-1\MedicamentoHospital\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ MedicamentoHospital ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ MedicamentoHospital ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 11 source files with javac [debug release 21] to target\classes
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ MedicamentoHospital ---
+[INFO] skip non existing resourceDirectory C:\Users\javie\Downloads\Hospital-Microservicios-master-1\MedicamentoHospital\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ MedicamentoHospital ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 2 source files with javac [debug release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ MedicamentoHospital ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+[INFO] Running com.example.MedicamentoHospital.controller.medicamentoControllerIntegrationTest
+19:24:55.872 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.MedicamentoHospital.controller.medicamentoControllerIntegrationTest]: medicamentoControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:24:56.102 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.MedicamentoHospital.MedicamentoHospitalApplication for test class com.example.MedicamentoHospital.controller.medicamentoControllerIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2026-06-28T19:24:57.208-04:00  INFO 24004 --- [MedicamentoHospital] [           main] M.c.medicamentoControllerIntegrationTest : Starting medicamentoControllerIntegrationTest using Java 25.0.1 with PID 24004 (started by javie in C:\Users\javie\Downloads\Hospital-Microservicios-master-1\MedicamentoHospital)
+2026-06-28T19:24:57.209-04:00  INFO 24004 --- [MedicamentoHospital] [           main] M.c.medicamentoControllerIntegrationTest : No active profile set, falling back to 1 default profile: "default"
+2026-06-28T19:24:58.491-04:00  INFO 24004 --- [MedicamentoHospital] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-28T19:24:58.651-04:00  INFO 24004 --- [MedicamentoHospital] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 152 ms. Found 1 JPA repository interface.
+2026-06-28T19:24:59.002-04:00  INFO 24004 --- [MedicamentoHospital] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f34d2896-9c30-36a9-afcb-ddb686bcb220
+2026-06-28T19:24:59.495-04:00  WARN 24004 --- [MedicamentoHospital] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-06-28T19:24:59.499-04:00  WARN 24004 --- [MedicamentoHospital] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-06-28T19:24:59.659-04:00  INFO 24004 --- [MedicamentoHospital] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-28T19:25:00.078-04:00  INFO 24004 --- [MedicamentoHospital] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3fc1abf
+2026-06-28T19:25:00.085-04:00  INFO 24004 --- [MedicamentoHospital] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-28T19:25:00.211-04:00  INFO 24004 --- [MedicamentoHospital] [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+2026-06-28T19:25:00.212-04:00  INFO 24004 --- [MedicamentoHospital] [           main] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2026-06-28T19:25:00.212-04:00  INFO 24004 --- [MedicamentoHospital] [           main] o.f.c.internal.license.VersionPrinter    : 
+2026-06-28T19:25:00.287-04:00  INFO 24004 --- [MedicamentoHospital] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3307/hospital_medicamento (MySQL 8.0)
+2026-06-28T19:25:00.425-04:00  INFO 24004 --- [MedicamentoHospital] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.057s)
+2026-06-28T19:25:00.425-04:00  WARN 24004 --- [MedicamentoHospital] [           main] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2026-06-28T19:25:00.460-04:00  INFO 24004 --- [MedicamentoHospital] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema `hospital_medicamento`: << Empty Schema >>
+2026-06-28T19:25:00.467-04:00  INFO 24004 --- [MedicamentoHospital] [           main] o.f.core.internal.command.DbMigrate      : Schema `hospital_medicamento` is up to date. No migration necessary.
+2026-06-28T19:25:00.573-04:00  INFO 24004 --- [MedicamentoHospital] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-28T19:25:00.643-04:00  INFO 24004 --- [MedicamentoHospital] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-06-28T19:25:00.678-04:00  INFO 24004 --- [MedicamentoHospital] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-28T19:25:00.969-04:00  INFO 24004 --- [MedicamentoHospital] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-28T19:25:01.041-04:00  WARN 24004 --- [MedicamentoHospital] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-28T19:25:01.750-04:00  INFO 24004 --- [MedicamentoHospital] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-28T19:25:01.802-04:00  INFO 24004 --- [MedicamentoHospital] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-28T19:25:02.458-04:00  WARN 24004 --- [MedicamentoHospital] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-28T19:25:02.605-04:00  WARN 24004 --- [MedicamentoHospital] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e53d0ac0-b9a6-4976-a8ad-71c502386f86
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-28T19:25:03.551-04:00  INFO 24004 --- [MedicamentoHospital] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-06-28T19:25:03.584-04:00  INFO 24004 --- [MedicamentoHospital] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1e085e71, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3dab9366, org.springframework.security.web.context.SecurityContextHolderFilter@4b1ef6a, org.springframework.security.web.header.HeaderWriterFilter@63bdf82d, org.springframework.web.filter.CorsFilter@33ccc8cd, org.springframework.security.web.authentication.logout.LogoutFilter@9670873, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@86abdbd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3dc70aa0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76b9056d, org.springframework.security.web.access.ExceptionTranslationFilter@3446ab40, org.springframework.security.web.access.intercept.AuthorizationFilter@1c2503d2]
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/javie/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-06-28T19:25:04.581-04:00  INFO 24004 --- [MedicamentoHospital] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-28T19:25:04.581-04:00  INFO 24004 --- [MedicamentoHospital] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-28T19:25:04.583-04:00  INFO 24004 --- [MedicamentoHospital] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-06-28T19:25:04.632-04:00  INFO 24004 --- [MedicamentoHospital] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-28T19:25:04.745-04:00  WARN 24004 --- [MedicamentoHospital] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-28T19:25:04.872-04:00  INFO 24004 --- [MedicamentoHospital] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-28T19:25:05.019-04:00  INFO 24004 --- [MedicamentoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-28T19:25:05.024-04:00  INFO 24004 --- [MedicamentoHospital] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28T19:25:05.050-04:00  INFO 24004 --- [MedicamentoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-28T19:25:05.051-04:00  INFO 24004 --- [MedicamentoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-28T19:25:05.051-04:00  INFO 24004 --- [MedicamentoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-28T19:25:05.051-04:00  INFO 24004 --- [MedicamentoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-28T19:25:05.051-04:00  INFO 24004 --- [MedicamentoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-28T19:25:05.051-04:00  INFO 24004 --- [MedicamentoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-28T19:25:05.051-04:00  INFO 24004 --- [MedicamentoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-28T19:25:05.571-04:00  INFO 24004 --- [MedicamentoHospital] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-28T19:25:05.575-04:00  INFO 24004 --- [MedicamentoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-28T19:25:05.579-04:00  INFO 24004 --- [MedicamentoHospital] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-28T19:25:05.590-04:00  INFO 24004 --- [MedicamentoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782689105586 with initial instances count: 11
+2026-06-28T19:25:05.601-04:00  INFO 24004 --- [MedicamentoHospital] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MEDICAMENTOHOSPITAL with eureka with status UP
+2026-06-28T19:25:05.601-04:00  INFO 24004 --- [MedicamentoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782689105601, current=UP, previous=STARTING]
+2026-06-28T19:25:05.604-04:00  INFO 24004 --- [MedicamentoHospital] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDICAMENTOHOSPITAL/javier.mshome.net:MedicamentoHospital:8087: registering service...
+2026-06-28T19:25:05.638-04:00  INFO 24004 --- [MedicamentoHospital] [           main] M.c.medicamentoControllerIntegrationTest : Started medicamentoControllerIntegrationTest in 9.35 seconds (process running for 11.223)
+2026-06-28T19:25:05.677-04:00  INFO 24004 --- [MedicamentoHospital] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDICAMENTOHOSPITAL/javier.mshome.net:MedicamentoHospital:8087 - registration status: 204
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (C:\Users\javie\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+2026-06-28T19:25:06.139-04:00  WARN 24004 --- [MedicamentoHospital] [           main] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/medicamentos' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+Hibernate: select next_val as id_val from medicamentos_seq for update
+Hibernate: update medicamentos_seq set next_val= ? where next_val=?
+Hibernate: insert into medicamentos (fecha_vencimiento,nombre,principio_activo,stock_disponible,id_medicamento) values (?,?,?,?,?)
+Hibernate: update medicamentos set fecha_vencimiento=?,nombre=?,principio_activo=?,stock_disponible=? where id_medicamento=?
+Hibernate: select count(*) from medicamentos mm1_0 where mm1_0.id_medicamento=?
+Hibernate: select mm1_0.id_medicamento,mm1_0.fecha_vencimiento,mm1_0.nombre,mm1_0.principio_activo,mm1_0.stock_disponible from medicamentos mm1_0
+Hibernate: select mm1_0.id_medicamento,mm1_0.fecha_vencimiento,mm1_0.nombre,mm1_0.principio_activo,mm1_0.stock_disponible from medicamentos mm1_0 where mm1_0.id_medicamento=?
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.23 s -- in com.example.MedicamentoHospital.controller.medicamentoControllerIntegrationTest
+[INFO] Running com.example.MedicamentoHospital.service.medicamentoServiceTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.366 s -- in com.example.MedicamentoHospital.service.medicamentoServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ MedicamentoHospital ---
+[INFO] Building jar: C:\Users\javie\Downloads\Hospital-Microservicios-master-1\MedicamentoHospital\target\MedicamentoHospital-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.2.0:repackage (repackage) @ MedicamentoHospital ---
+[INFO] Replacing main artifact C:\Users\javie\Downloads\Hospital-Microservicios-master-1\MedicamentoHospital\target\MedicamentoHospital-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\javie\Downloads\Hospital-Microservicios-master-1\MedicamentoHospital\target\MedicamentoHospital-0.0.1-SNAPSHOT.jar.original
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ MedicamentoHospital ---
+[INFO] Installing C:\Users\javie\Downloads\Hospital-Microservicios-master-1\MedicamentoHospital\pom.xml to C:\Users\javie\.m2\repository\com\example\MedicamentoHospital\0.0.1-SNAPSHOT\MedicamentoHospital-0.0.1-SNAPSHOT.pom
+[INFO] Installing C:\Users\javie\Downloads\Hospital-Microservicios-master-1\MedicamentoHospital\target\MedicamentoHospital-0.0.1-SNAPSHOT.jar to C:\Users\javie\.m2\repository\com\example\MedicamentoHospital\0.0.1-SNAPSHOT\MedicamentoHospital-0.0.1-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  30.399 s
+[INFO] Finished at: 2026-06-28T19:25:14-04:00
+[INFO] ------------------------------------------------------------------------

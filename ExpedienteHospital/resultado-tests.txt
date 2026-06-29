@@ -1,0 +1,148 @@
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.example:ExpedienteHospital >-------------------
+[INFO] Building ExpedienteHospital 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ ExpedienteHospital ---
+[INFO] Deleting C:\Users\javie\Downloads\Hospital-Microservicios-master-1\ExpedienteHospital\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ExpedienteHospital ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ ExpedienteHospital ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 11 source files with javac [debug release 21] to target\classes
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ ExpedienteHospital ---
+[INFO] skip non existing resourceDirectory C:\Users\javie\Downloads\Hospital-Microservicios-master-1\ExpedienteHospital\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ ExpedienteHospital ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 2 source files with javac [debug release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ ExpedienteHospital ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+[INFO] Running com.example.ExpedienteHospital.controller.expedienteControllerIntegrationTest
+19:25:46.528 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.ExpedienteHospital.controller.expedienteControllerIntegrationTest]: expedienteControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:25:46.662 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.ExpedienteHospital.ExpedienteHospitalApplication for test class com.example.ExpedienteHospital.controller.expedienteControllerIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2026-06-28T19:25:47.080-04:00  INFO 18420 --- [ExpedienteHospital] [           main] .E.c.expedienteControllerIntegrationTest : Starting expedienteControllerIntegrationTest using Java 25.0.1 with PID 18420 (started by javie in C:\Users\javie\Downloads\Hospital-Microservicios-master-1\ExpedienteHospital)
+2026-06-28T19:25:47.081-04:00  INFO 18420 --- [ExpedienteHospital] [           main] .E.c.expedienteControllerIntegrationTest : No active profile set, falling back to 1 default profile: "default"
+2026-06-28T19:25:48.386-04:00  INFO 18420 --- [ExpedienteHospital] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-28T19:25:48.546-04:00  INFO 18420 --- [ExpedienteHospital] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 150 ms. Found 1 JPA repository interface.
+2026-06-28T19:25:48.871-04:00  INFO 18420 --- [ExpedienteHospital] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8c0172c1-c58f-3810-a66a-ec53cdd0412a
+2026-06-28T19:25:49.442-04:00  WARN 18420 --- [ExpedienteHospital] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-06-28T19:25:49.450-04:00  WARN 18420 --- [ExpedienteHospital] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-06-28T19:25:49.632-04:00  INFO 18420 --- [ExpedienteHospital] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-28T19:25:49.961-04:00  INFO 18420 --- [ExpedienteHospital] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@702f4124
+2026-06-28T19:25:49.964-04:00  INFO 18420 --- [ExpedienteHospital] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-28T19:25:50.119-04:00  INFO 18420 --- [ExpedienteHospital] [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+2026-06-28T19:25:50.119-04:00  INFO 18420 --- [ExpedienteHospital] [           main] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2026-06-28T19:25:50.120-04:00  INFO 18420 --- [ExpedienteHospital] [           main] o.f.c.internal.license.VersionPrinter    : 
+2026-06-28T19:25:50.193-04:00  INFO 18420 --- [ExpedienteHospital] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3307/hospital_expediente (MySQL 8.0)
+2026-06-28T19:25:50.296-04:00  INFO 18420 --- [ExpedienteHospital] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.037s)
+2026-06-28T19:25:50.297-04:00  WARN 18420 --- [ExpedienteHospital] [           main] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2026-06-28T19:25:50.354-04:00  INFO 18420 --- [ExpedienteHospital] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema `hospital_expediente`: << Empty Schema >>
+2026-06-28T19:25:50.362-04:00  INFO 18420 --- [ExpedienteHospital] [           main] o.f.core.internal.command.DbMigrate      : Schema `hospital_expediente` is up to date. No migration necessary.
+2026-06-28T19:25:50.654-04:00  INFO 18420 --- [ExpedienteHospital] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-28T19:25:50.764-04:00  INFO 18420 --- [ExpedienteHospital] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-06-28T19:25:50.818-04:00  INFO 18420 --- [ExpedienteHospital] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-28T19:25:51.276-04:00  INFO 18420 --- [ExpedienteHospital] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-28T19:25:51.375-04:00  WARN 18420 --- [ExpedienteHospital] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-28T19:25:52.346-04:00  INFO 18420 --- [ExpedienteHospital] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-28T19:25:52.405-04:00  INFO 18420 --- [ExpedienteHospital] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-28T19:25:53.003-04:00  WARN 18420 --- [ExpedienteHospital] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-28T19:25:53.127-04:00  WARN 18420 --- [ExpedienteHospital] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8eceb090-401b-4a1d-aa2b-7fbf0203b4ad
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-28T19:25:54.055-04:00  INFO 18420 --- [ExpedienteHospital] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-06-28T19:25:54.082-04:00  INFO 18420 --- [ExpedienteHospital] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@8588a62, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@572d1f18, org.springframework.security.web.context.SecurityContextHolderFilter@1b7648f, org.springframework.security.web.header.HeaderWriterFilter@172f2717, org.springframework.web.filter.CorsFilter@28e12bc5, org.springframework.security.web.authentication.logout.LogoutFilter@149bdb4e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@521032a6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a2b1f24, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e00f822, org.springframework.security.web.access.ExceptionTranslationFilter@7701b695, org.springframework.security.web.access.intercept.AuthorizationFilter@4001a5a1]
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/javie/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-06-28T19:25:55.046-04:00  INFO 18420 --- [ExpedienteHospital] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-28T19:25:55.046-04:00  INFO 18420 --- [ExpedienteHospital] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-28T19:25:55.047-04:00  INFO 18420 --- [ExpedienteHospital] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-06-28T19:25:55.081-04:00  INFO 18420 --- [ExpedienteHospital] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-28T19:25:55.190-04:00  WARN 18420 --- [ExpedienteHospital] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-28T19:25:55.268-04:00  INFO 18420 --- [ExpedienteHospital] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-28T19:25:55.433-04:00  INFO 18420 --- [ExpedienteHospital] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-28T19:25:55.440-04:00  INFO 18420 --- [ExpedienteHospital] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28T19:25:55.472-04:00  INFO 18420 --- [ExpedienteHospital] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-28T19:25:55.472-04:00  INFO 18420 --- [ExpedienteHospital] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-28T19:25:55.472-04:00  INFO 18420 --- [ExpedienteHospital] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-28T19:25:55.473-04:00  INFO 18420 --- [ExpedienteHospital] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-28T19:25:55.473-04:00  INFO 18420 --- [ExpedienteHospital] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-28T19:25:55.473-04:00  INFO 18420 --- [ExpedienteHospital] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-28T19:25:55.473-04:00  INFO 18420 --- [ExpedienteHospital] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-28T19:25:55.888-04:00  INFO 18420 --- [ExpedienteHospital] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-28T19:25:55.892-04:00  INFO 18420 --- [ExpedienteHospital] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-28T19:25:55.896-04:00  INFO 18420 --- [ExpedienteHospital] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-28T19:25:55.905-04:00  INFO 18420 --- [ExpedienteHospital] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782689155901 with initial instances count: 11
+2026-06-28T19:25:55.912-04:00  INFO 18420 --- [ExpedienteHospital] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EXPEDIENTEHOSPITAL with eureka with status UP
+2026-06-28T19:25:55.912-04:00  INFO 18420 --- [ExpedienteHospital] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782689155912, current=UP, previous=STARTING]
+2026-06-28T19:25:55.914-04:00  INFO 18420 --- [ExpedienteHospital] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EXPEDIENTEHOSPITAL/javier.mshome.net:ExpedienteHospital:8085: registering service...
+2026-06-28T19:25:55.953-04:00  INFO 18420 --- [ExpedienteHospital] [           main] .E.c.expedienteControllerIntegrationTest : Started expedienteControllerIntegrationTest in 9.16 seconds (process running for 10.133)
+2026-06-28T19:25:56.026-04:00  INFO 18420 --- [ExpedienteHospital] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EXPEDIENTEHOSPITAL/javier.mshome.net:ExpedienteHospital:8085 - registration status: 204
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (C:\Users\javie\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+2026-06-28T19:25:56.640-04:00  WARN 18420 --- [ExpedienteHospital] [           main] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/expedientes' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+Hibernate: select next_val as id_val from expedientes_clinicos_seq for update
+Hibernate: update expedientes_clinicos_seq set next_val= ? where next_val=?
+Hibernate: insert into expedientes_clinicos (alergias,enfermedades_cronicas,tipo_sangre,id_expediente) values (?,?,?,?)
+Hibernate: update expedientes_clinicos set alergias=?,enfermedades_cronicas=?,tipo_sangre=? where id_expediente=?
+Hibernate: select count(*) from expedientes_clinicos em1_0 where em1_0.id_expediente=?
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.00 s -- in com.example.ExpedienteHospital.controller.expedienteControllerIntegrationTest
+[INFO] Running com.example.ExpedienteHospital.service.expedienteServiceTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.278 s -- in com.example.ExpedienteHospital.service.expedienteServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ ExpedienteHospital ---
+[INFO] Building jar: C:\Users\javie\Downloads\Hospital-Microservicios-master-1\ExpedienteHospital\target\ExpedienteHospital-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.2.0:repackage (repackage) @ ExpedienteHospital ---
+[INFO] Replacing main artifact C:\Users\javie\Downloads\Hospital-Microservicios-master-1\ExpedienteHospital\target\ExpedienteHospital-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\javie\Downloads\Hospital-Microservicios-master-1\ExpedienteHospital\target\ExpedienteHospital-0.0.1-SNAPSHOT.jar.original
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ ExpedienteHospital ---
+[INFO] Installing C:\Users\javie\Downloads\Hospital-Microservicios-master-1\ExpedienteHospital\pom.xml to C:\Users\javie\.m2\repository\com\example\ExpedienteHospital\0.0.1-SNAPSHOT\ExpedienteHospital-0.0.1-SNAPSHOT.pom
+[INFO] Installing C:\Users\javie\Downloads\Hospital-Microservicios-master-1\ExpedienteHospital\target\ExpedienteHospital-0.0.1-SNAPSHOT.jar to C:\Users\javie\.m2\repository\com\example\ExpedienteHospital\0.0.1-SNAPSHOT\ExpedienteHospital-0.0.1-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  21.312 s
+[INFO] Finished at: 2026-06-28T19:26:00-04:00
+[INFO] ------------------------------------------------------------------------

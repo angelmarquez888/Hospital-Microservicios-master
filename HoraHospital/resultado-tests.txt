@@ -1,0 +1,150 @@
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.example:HoraHospital >----------------------
+[INFO] Building HoraHospital 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ HoraHospital ---
+[INFO] Deleting C:\Users\javie\Downloads\Hospital-Microservicios-master-1\HoraHospital\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ HoraHospital ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ HoraHospital ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 11 source files with javac [debug release 21] to target\classes
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ HoraHospital ---
+[INFO] skip non existing resourceDirectory C:\Users\javie\Downloads\Hospital-Microservicios-master-1\HoraHospital\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ HoraHospital ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 2 source files with javac [debug release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ HoraHospital ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+[INFO] Running com.example.HoraHospital.controller.horaControllerIntegrationTest
+19:24:34.668 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.HoraHospital.controller.horaControllerIntegrationTest]: horaControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:24:34.812 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.HoraHospital.HoraHospitalApplication for test class com.example.HoraHospital.controller.horaControllerIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2026-06-28T19:24:35.385-04:00  INFO 1952 --- [HoraHospital] [           main] c.e.H.c.horaControllerIntegrationTest    : Starting horaControllerIntegrationTest using Java 25.0.1 with PID 1952 (started by javie in C:\Users\javie\Downloads\Hospital-Microservicios-master-1\HoraHospital)
+2026-06-28T19:24:35.386-04:00  INFO 1952 --- [HoraHospital] [           main] c.e.H.c.horaControllerIntegrationTest    : No active profile set, falling back to 1 default profile: "default"
+2026-06-28T19:24:37.035-04:00  INFO 1952 --- [HoraHospital] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-28T19:24:37.644-04:00  INFO 1952 --- [HoraHospital] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 582 ms. Found 1 JPA repository interface.
+2026-06-28T19:24:37.959-04:00  INFO 1952 --- [HoraHospital] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bb87e812-e1ef-34e4-b81e-70522d48ea29
+2026-06-28T19:24:38.611-04:00  WARN 1952 --- [HoraHospital] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-06-28T19:24:38.618-04:00  WARN 1952 --- [HoraHospital] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-06-28T19:24:38.763-04:00  INFO 1952 --- [HoraHospital] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-28T19:24:39.020-04:00  INFO 1952 --- [HoraHospital] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3fc1abf
+2026-06-28T19:24:39.022-04:00  INFO 1952 --- [HoraHospital] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-28T19:24:39.191-04:00  INFO 1952 --- [HoraHospital] [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+2026-06-28T19:24:39.191-04:00  INFO 1952 --- [HoraHospital] [           main] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2026-06-28T19:24:39.192-04:00  INFO 1952 --- [HoraHospital] [           main] o.f.c.internal.license.VersionPrinter    : 
+2026-06-28T19:24:39.345-04:00  INFO 1952 --- [HoraHospital] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3307/hospital_hora (MySQL 8.0)
+2026-06-28T19:24:39.465-04:00  INFO 1952 --- [HoraHospital] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.052s)
+2026-06-28T19:24:39.465-04:00  WARN 1952 --- [HoraHospital] [           main] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2026-06-28T19:24:39.498-04:00  INFO 1952 --- [HoraHospital] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema `hospital_hora`: << Empty Schema >>
+2026-06-28T19:24:39.505-04:00  INFO 1952 --- [HoraHospital] [           main] o.f.core.internal.command.DbMigrate      : Schema `hospital_hora` is up to date. No migration necessary.
+2026-06-28T19:24:39.699-04:00  INFO 1952 --- [HoraHospital] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-28T19:24:39.786-04:00  INFO 1952 --- [HoraHospital] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-06-28T19:24:39.828-04:00  INFO 1952 --- [HoraHospital] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-28T19:24:40.090-04:00  INFO 1952 --- [HoraHospital] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-28T19:24:40.159-04:00  WARN 1952 --- [HoraHospital] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-28T19:24:41.261-04:00  INFO 1952 --- [HoraHospital] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-28T19:24:41.337-04:00  INFO 1952 --- [HoraHospital] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-28T19:24:42.045-04:00  WARN 1952 --- [HoraHospital] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-28T19:24:42.339-04:00  WARN 1952 --- [HoraHospital] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4119b1a2-0e88-4b0d-b190-4992162d478a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-28T19:24:43.552-04:00  INFO 1952 --- [HoraHospital] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/javie/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-06-28T19:24:43.583-04:00  INFO 1952 --- [HoraHospital] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@24a4e9c0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@609a996f, org.springframework.security.web.context.SecurityContextHolderFilter@618d2191, org.springframework.security.web.header.HeaderWriterFilter@486480e2, org.springframework.web.filter.CorsFilter@27f09e08, org.springframework.security.web.authentication.logout.LogoutFilter@63ee2891, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3747877, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@755c29b0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2984edab, org.springframework.security.web.access.ExceptionTranslationFilter@2acbbee4, org.springframework.security.web.access.intercept.AuthorizationFilter@45745de6]
+2026-06-28T19:24:44.853-04:00  INFO 1952 --- [HoraHospital] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-28T19:24:44.854-04:00  INFO 1952 --- [HoraHospital] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-28T19:24:44.857-04:00  INFO 1952 --- [HoraHospital] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2026-06-28T19:24:44.914-04:00  INFO 1952 --- [HoraHospital] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-28T19:24:45.092-04:00  WARN 1952 --- [HoraHospital] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-28T19:24:45.202-04:00  INFO 1952 --- [HoraHospital] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-28T19:24:45.438-04:00  INFO 1952 --- [HoraHospital] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-28T19:24:45.444-04:00  INFO 1952 --- [HoraHospital] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28T19:24:45.480-04:00  INFO 1952 --- [HoraHospital] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-28T19:24:45.480-04:00  INFO 1952 --- [HoraHospital] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-28T19:24:45.480-04:00  INFO 1952 --- [HoraHospital] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-28T19:24:45.480-04:00  INFO 1952 --- [HoraHospital] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-28T19:24:45.480-04:00  INFO 1952 --- [HoraHospital] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-28T19:24:45.480-04:00  INFO 1952 --- [HoraHospital] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-28T19:24:45.481-04:00  INFO 1952 --- [HoraHospital] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-28T19:24:46.086-04:00  INFO 1952 --- [HoraHospital] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-28T19:24:46.092-04:00  INFO 1952 --- [HoraHospital] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-28T19:24:46.095-04:00  INFO 1952 --- [HoraHospital] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-28T19:24:46.112-04:00  INFO 1952 --- [HoraHospital] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782689086104 with initial instances count: 11
+2026-06-28T19:24:46.122-04:00  INFO 1952 --- [HoraHospital] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application HORAHOSPITAL with eureka with status UP
+2026-06-28T19:24:46.126-04:00  INFO 1952 --- [HoraHospital] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782689086126, current=UP, previous=STARTING]
+2026-06-28T19:24:46.133-04:00  INFO 1952 --- [HoraHospital] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HORAHOSPITAL/javier.mshome.net:HoraHospital:8086: registering service...
+2026-06-28T19:24:46.167-04:00  INFO 1952 --- [HoraHospital] [           main] c.e.H.c.horaControllerIntegrationTest    : Started horaControllerIntegrationTest in 11.196 seconds (process running for 12.194)
+2026-06-28T19:24:46.265-04:00  INFO 1952 --- [HoraHospital] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HORAHOSPITAL/javier.mshome.net:HoraHospital:8086 - registration status: 204
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (C:\Users\javie\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+2026-06-28T19:24:46.930-04:00  WARN 1952 --- [HoraHospital] [           main] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/horas' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+Hibernate: select next_val as id_val from horas_medicas_seq for update
+Hibernate: update horas_medicas_seq set next_val= ? where next_val=?
+Hibernate: insert into horas_medicas (especialidad,estado,fecha_hora,medico,id_hora) values (?,?,?,?,?)
+Hibernate: update horas_medicas set especialidad=?,estado=?,fecha_hora=?,medico=? where id_hora=?
+Hibernate: select count(*) from horas_medicas hm1_0 where hm1_0.id_hora=?
+Hibernate: select hm1_0.id_hora,hm1_0.especialidad,hm1_0.estado,hm1_0.fecha_hora,hm1_0.medico from horas_medicas hm1_0 where hm1_0.id_hora=?
+Hibernate: select hm1_0.id_hora,hm1_0.especialidad,hm1_0.estado,hm1_0.fecha_hora,hm1_0.medico from horas_medicas hm1_0
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.74 s -- in com.example.HoraHospital.controller.horaControllerIntegrationTest
+[INFO] Running com.example.HoraHospital.service.horaServiceTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.574 s -- in com.example.HoraHospital.service.horaServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ HoraHospital ---
+[INFO] Building jar: C:\Users\javie\Downloads\Hospital-Microservicios-master-1\HoraHospital\target\HoraHospital-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.2.0:repackage (repackage) @ HoraHospital ---
+[INFO] Replacing main artifact C:\Users\javie\Downloads\Hospital-Microservicios-master-1\HoraHospital\target\HoraHospital-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\javie\Downloads\Hospital-Microservicios-master-1\HoraHospital\target\HoraHospital-0.0.1-SNAPSHOT.jar.original
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ HoraHospital ---
+[INFO] Installing C:\Users\javie\Downloads\Hospital-Microservicios-master-1\HoraHospital\pom.xml to C:\Users\javie\.m2\repository\com\example\HoraHospital\0.0.1-SNAPSHOT\HoraHospital-0.0.1-SNAPSHOT.pom
+[INFO] Installing C:\Users\javie\Downloads\Hospital-Microservicios-master-1\HoraHospital\target\HoraHospital-0.0.1-SNAPSHOT.jar to C:\Users\javie\.m2\repository\com\example\HoraHospital\0.0.1-SNAPSHOT\HoraHospital-0.0.1-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  30.122 s
+[INFO] Finished at: 2026-06-28T19:24:57-04:00
+[INFO] ------------------------------------------------------------------------

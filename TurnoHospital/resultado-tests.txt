@@ -1,0 +1,151 @@
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.example:TurnoHospital >----------------------
+[INFO] Building TurnoHospital 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ TurnoHospital ---
+[INFO] Deleting C:\Users\javie\Downloads\Hospital-Microservicios-master-1\TurnoHospital\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ TurnoHospital ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ TurnoHospital ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 12 source files with javac [debug release 21] to target\classes
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ TurnoHospital ---
+[INFO] skip non existing resourceDirectory C:\Users\javie\Downloads\Hospital-Microservicios-master-1\TurnoHospital\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ TurnoHospital ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 2 source files with javac [debug release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ TurnoHospital ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+[INFO] Running com.example.TurnoHospital.controller.turnoControllerIntegrationTest
+19:27:03.531 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.TurnoHospital.controller.turnoControllerIntegrationTest]: turnoControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:27:03.690 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.TurnoHospital.TurnoHospitalApplication for test class com.example.TurnoHospital.controller.turnoControllerIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2026-06-28T19:27:04.175-04:00  INFO 23544 --- [TurnoHospital] [           main] c.e.T.c.turnoControllerIntegrationTest   : Starting turnoControllerIntegrationTest using Java 25.0.1 with PID 23544 (started by javie in C:\Users\javie\Downloads\Hospital-Microservicios-master-1\TurnoHospital)
+2026-06-28T19:27:04.177-04:00  INFO 23544 --- [TurnoHospital] [           main] c.e.T.c.turnoControllerIntegrationTest   : No active profile set, falling back to 1 default profile: "default"
+2026-06-28T19:27:05.316-04:00  INFO 23544 --- [TurnoHospital] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-28T19:27:05.447-04:00  INFO 23544 --- [TurnoHospital] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123 ms. Found 1 JPA repository interface.
+2026-06-28T19:27:05.769-04:00  INFO 23544 --- [TurnoHospital] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4346b7d2-ef4e-332a-85a1-cde287c12eac
+2026-06-28T19:27:06.286-04:00  WARN 23544 --- [TurnoHospital] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-06-28T19:27:06.293-04:00  WARN 23544 --- [TurnoHospital] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-06-28T19:27:06.437-04:00  INFO 23544 --- [TurnoHospital] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-28T19:27:06.693-04:00  INFO 23544 --- [TurnoHospital] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28bd5015
+2026-06-28T19:27:06.695-04:00  INFO 23544 --- [TurnoHospital] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-28T19:27:06.794-04:00  INFO 23544 --- [TurnoHospital] [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+2026-06-28T19:27:06.794-04:00  INFO 23544 --- [TurnoHospital] [           main] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2026-06-28T19:27:06.794-04:00  INFO 23544 --- [TurnoHospital] [           main] o.f.c.internal.license.VersionPrinter    : 
+2026-06-28T19:27:06.841-04:00  INFO 23544 --- [TurnoHospital] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3307/hospital_turno (MySQL 8.0)
+2026-06-28T19:27:06.922-04:00  INFO 23544 --- [TurnoHospital] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.032s)
+2026-06-28T19:27:06.923-04:00  WARN 23544 --- [TurnoHospital] [           main] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2026-06-28T19:27:06.956-04:00  INFO 23544 --- [TurnoHospital] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema `hospital_turno`: << Empty Schema >>
+2026-06-28T19:27:06.966-04:00  INFO 23544 --- [TurnoHospital] [           main] o.f.core.internal.command.DbMigrate      : Schema `hospital_turno` is up to date. No migration necessary.
+2026-06-28T19:27:07.109-04:00  INFO 23544 --- [TurnoHospital] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-28T19:27:07.201-04:00  INFO 23544 --- [TurnoHospital] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-06-28T19:27:07.253-04:00  INFO 23544 --- [TurnoHospital] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-28T19:27:07.558-04:00  INFO 23544 --- [TurnoHospital] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-28T19:27:07.628-04:00  WARN 23544 --- [TurnoHospital] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-28T19:27:08.488-04:00  INFO 23544 --- [TurnoHospital] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-28T19:27:08.539-04:00  INFO 23544 --- [TurnoHospital] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-28T19:27:09.269-04:00  WARN 23544 --- [TurnoHospital] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-28T19:27:09.377-04:00  WARN 23544 --- [TurnoHospital] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4df71013-0195-43c4-8aa2-6c55bc120d43
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-28T19:27:10.295-04:00  INFO 23544 --- [TurnoHospital] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-06-28T19:27:10.333-04:00  INFO 23544 --- [TurnoHospital] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@656c356c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3146c61d, org.springframework.security.web.context.SecurityContextHolderFilter@1d4ee936, org.springframework.security.web.header.HeaderWriterFilter@109fff4a, org.springframework.web.filter.CorsFilter@6321e29b, org.springframework.security.web.authentication.logout.LogoutFilter@30ffc3c0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@123fd460, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5297030e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12b2fcaf, org.springframework.security.web.access.ExceptionTranslationFilter@227ae4e4, org.springframework.security.web.access.intercept.AuthorizationFilter@39e75e88]
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/javie/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-06-28T19:27:11.703-04:00  INFO 23544 --- [TurnoHospital] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-28T19:27:11.704-04:00  INFO 23544 --- [TurnoHospital] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-28T19:27:11.705-04:00  INFO 23544 --- [TurnoHospital] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-06-28T19:27:11.762-04:00  INFO 23544 --- [TurnoHospital] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-28T19:27:11.930-04:00  WARN 23544 --- [TurnoHospital] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-28T19:27:12.031-04:00  INFO 23544 --- [TurnoHospital] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-28T19:27:12.264-04:00  INFO 23544 --- [TurnoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-28T19:27:12.275-04:00  INFO 23544 --- [TurnoHospital] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28T19:27:12.306-04:00  INFO 23544 --- [TurnoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-28T19:27:12.306-04:00  INFO 23544 --- [TurnoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-28T19:27:12.306-04:00  INFO 23544 --- [TurnoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-28T19:27:12.306-04:00  INFO 23544 --- [TurnoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-28T19:27:12.306-04:00  INFO 23544 --- [TurnoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-28T19:27:12.306-04:00  INFO 23544 --- [TurnoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-28T19:27:12.306-04:00  INFO 23544 --- [TurnoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-28T19:27:12.835-04:00  INFO 23544 --- [TurnoHospital] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-28T19:27:12.839-04:00  INFO 23544 --- [TurnoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-28T19:27:12.843-04:00  INFO 23544 --- [TurnoHospital] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-28T19:27:12.860-04:00  INFO 23544 --- [TurnoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782689232854 with initial instances count: 11
+2026-06-28T19:27:12.871-04:00  INFO 23544 --- [TurnoHospital] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TURNOHOSPITAL with eureka with status UP
+2026-06-28T19:27:12.871-04:00  INFO 23544 --- [TurnoHospital] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782689232871, current=UP, previous=STARTING]
+2026-06-28T19:27:12.874-04:00  INFO 23544 --- [TurnoHospital] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TURNOHOSPITAL/javier.mshome.net:TurnoHospital:8090: registering service...
+2026-06-28T19:27:12.922-04:00  INFO 23544 --- [TurnoHospital] [           main] c.e.T.c.turnoControllerIntegrationTest   : Started turnoControllerIntegrationTest in 9.081 seconds (process running for 10.295)
+2026-06-28T19:27:13.056-04:00  INFO 23544 --- [TurnoHospital] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TURNOHOSPITAL/javier.mshome.net:TurnoHospital:8090 - registration status: 204
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (C:\Users\javie\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+2026-06-28T19:27:13.754-04:00  WARN 23544 --- [TurnoHospital] [           main] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/turnos' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+Hibernate: select next_val as id_val from turnos_seq for update
+Hibernate: update turnos_seq set next_val= ? where next_val=?
+Hibernate: select tm1_0.id_turno,tm1_0.area,tm1_0.fin_turno,tm1_0.inicio_turno,tm1_0.rut_empleado from turnos tm1_0
+Hibernate: insert into turnos (area,fin_turno,inicio_turno,rut_empleado,id_turno) values (?,?,?,?,?)
+Hibernate: update turnos set area=?,fin_turno=?,inicio_turno=?,rut_empleado=? where id_turno=?
+Hibernate: select tm1_0.id_turno,tm1_0.area,tm1_0.fin_turno,tm1_0.inicio_turno,tm1_0.rut_empleado from turnos tm1_0 where tm1_0.rut_empleado=?
+Hibernate: select count(*) from turnos tm1_0 where tm1_0.id_turno=?
+Hibernate: select tm1_0.id_turno,tm1_0.area,tm1_0.fin_turno,tm1_0.inicio_turno,tm1_0.rut_empleado from turnos tm1_0 where tm1_0.id_turno=?
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.65 s -- in com.example.TurnoHospital.controller.turnoControllerIntegrationTest
+[INFO] Running com.example.TurnoHospital.service.turnoServiceImplTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.431 s -- in com.example.TurnoHospital.service.turnoServiceImplTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ TurnoHospital ---
+[INFO] Building jar: C:\Users\javie\Downloads\Hospital-Microservicios-master-1\TurnoHospital\target\TurnoHospital-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.2.0:repackage (repackage) @ TurnoHospital ---
+[INFO] Replacing main artifact C:\Users\javie\Downloads\Hospital-Microservicios-master-1\TurnoHospital\target\TurnoHospital-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\javie\Downloads\Hospital-Microservicios-master-1\TurnoHospital\target\TurnoHospital-0.0.1-SNAPSHOT.jar.original
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ TurnoHospital ---
+[INFO] Installing C:\Users\javie\Downloads\Hospital-Microservicios-master-1\TurnoHospital\pom.xml to C:\Users\javie\.m2\repository\com\example\TurnoHospital\0.0.1-SNAPSHOT\TurnoHospital-0.0.1-SNAPSHOT.pom
+[INFO] Installing C:\Users\javie\Downloads\Hospital-Microservicios-master-1\TurnoHospital\target\TurnoHospital-0.0.1-SNAPSHOT.jar to C:\Users\javie\.m2\repository\com\example\TurnoHospital\0.0.1-SNAPSHOT\TurnoHospital-0.0.1-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  32.913 s
+[INFO] Finished at: 2026-06-28T19:27:28-04:00
+[INFO] ------------------------------------------------------------------------

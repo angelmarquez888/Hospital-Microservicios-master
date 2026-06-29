@@ -1,0 +1,149 @@
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.example:AlertaHospital >---------------------
+[INFO] Building AlertaHospital 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ AlertaHospital ---
+[INFO] Deleting C:\Users\javie\Downloads\Hospital-Microservicios-master-1\AlertaHospital\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ AlertaHospital ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ AlertaHospital ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 11 source files with javac [debug release 21] to target\classes
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ AlertaHospital ---
+[INFO] skip non existing resourceDirectory C:\Users\javie\Downloads\Hospital-Microservicios-master-1\AlertaHospital\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ AlertaHospital ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 2 source files with javac [debug release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ AlertaHospital ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+[INFO] Running com.example.AlertaHospital.controller.alertaControllerIntegrationTest
+18:05:01.093 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.AlertaHospital.controller.alertaControllerIntegrationTest]: alertaControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:05:01.309 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.AlertaHospital.AlertaHospitalApplication for test class com.example.AlertaHospital.controller.alertaControllerIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2026-06-28T18:05:01.971-04:00  INFO 24596 --- [AlertaHospital] [           main] c.e.A.c.alertaControllerIntegrationTest  : Starting alertaControllerIntegrationTest using Java 25.0.1 with PID 24596 (started by javie in C:\Users\javie\Downloads\Hospital-Microservicios-master-1\AlertaHospital)
+2026-06-28T18:05:01.972-04:00  INFO 24596 --- [AlertaHospital] [           main] c.e.A.c.alertaControllerIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2026-06-28T18:05:04.020-04:00  INFO 24596 --- [AlertaHospital] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-28T18:05:04.353-04:00  INFO 24596 --- [AlertaHospital] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 316 ms. Found 1 JPA repository interface.
+2026-06-28T18:05:04.928-04:00  INFO 24596 --- [AlertaHospital] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d74b320a-f2ca-30ff-884c-b6e4d472a205
+2026-06-28T18:05:05.670-04:00  WARN 24596 --- [AlertaHospital] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-06-28T18:05:05.677-04:00  WARN 24596 --- [AlertaHospital] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-06-28T18:05:06.099-04:00  INFO 24596 --- [AlertaHospital] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-28T18:05:06.516-04:00  INFO 24596 --- [AlertaHospital] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11180750
+2026-06-28T18:05:06.517-04:00  INFO 24596 --- [AlertaHospital] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-28T18:05:06.689-04:00  INFO 24596 --- [AlertaHospital] [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+2026-06-28T18:05:06.689-04:00  INFO 24596 --- [AlertaHospital] [           main] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2026-06-28T18:05:06.689-04:00  INFO 24596 --- [AlertaHospital] [           main] o.f.c.internal.license.VersionPrinter    : 
+2026-06-28T18:05:06.788-04:00  INFO 24596 --- [AlertaHospital] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3307/hospital_alerta (MySQL 8.0)
+2026-06-28T18:05:06.916-04:00  INFO 24596 --- [AlertaHospital] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.052s)
+2026-06-28T18:05:06.916-04:00  WARN 24596 --- [AlertaHospital] [           main] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2026-06-28T18:05:06.951-04:00  INFO 24596 --- [AlertaHospital] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema `hospital_alerta`: << Empty Schema >>
+2026-06-28T18:05:06.960-04:00  INFO 24596 --- [AlertaHospital] [           main] o.f.core.internal.command.DbMigrate      : Schema `hospital_alerta` is up to date. No migration necessary.
+2026-06-28T18:05:07.166-04:00  INFO 24596 --- [AlertaHospital] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-28T18:05:07.289-04:00  INFO 24596 --- [AlertaHospital] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-06-28T18:05:07.350-04:00  INFO 24596 --- [AlertaHospital] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-28T18:05:07.732-04:00  INFO 24596 --- [AlertaHospital] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-28T18:05:07.814-04:00  WARN 24596 --- [AlertaHospital] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-28T18:05:09.333-04:00  INFO 24596 --- [AlertaHospital] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-28T18:05:09.403-04:00  INFO 24596 --- [AlertaHospital] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-28T18:05:10.350-04:00  WARN 24596 --- [AlertaHospital] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-28T18:05:10.545-04:00  WARN 24596 --- [AlertaHospital] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 32ca5f7f-32d0-4705-902a-ecfde707b19a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-28T18:05:12.776-04:00  INFO 24596 --- [AlertaHospital] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-06-28T18:05:12.823-04:00  INFO 24596 --- [AlertaHospital] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@230383a7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6222a343, org.springframework.security.web.context.SecurityContextHolderFilter@dd26290, org.springframework.security.web.header.HeaderWriterFilter@4a9c188f, org.springframework.web.filter.CorsFilter@228c854f, org.springframework.security.web.authentication.logout.LogoutFilter@5988e36e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d1b9dd7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58dd584a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47c019d7, org.springframework.security.web.access.ExceptionTranslationFilter@4ec78008, org.springframework.security.web.access.intercept.AuthorizationFilter@52813ba4]
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/javie/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-06-28T18:05:14.091-04:00  INFO 24596 --- [AlertaHospital] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-28T18:05:14.092-04:00  INFO 24596 --- [AlertaHospital] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-28T18:05:14.094-04:00  INFO 24596 --- [AlertaHospital] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2026-06-28T18:05:14.154-04:00  INFO 24596 --- [AlertaHospital] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-06-28T18:05:14.278-04:00  WARN 24596 --- [AlertaHospital] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-28T18:05:14.420-04:00  INFO 24596 --- [AlertaHospital] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-28T18:05:14.603-04:00  INFO 24596 --- [AlertaHospital] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-28T18:05:14.609-04:00  INFO 24596 --- [AlertaHospital] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-28T18:05:14.641-04:00  INFO 24596 --- [AlertaHospital] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-28T18:05:14.641-04:00  INFO 24596 --- [AlertaHospital] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-28T18:05:14.642-04:00  INFO 24596 --- [AlertaHospital] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-28T18:05:14.642-04:00  INFO 24596 --- [AlertaHospital] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-28T18:05:14.642-04:00  INFO 24596 --- [AlertaHospital] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-28T18:05:14.642-04:00  INFO 24596 --- [AlertaHospital] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-28T18:05:14.642-04:00  INFO 24596 --- [AlertaHospital] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-28T18:05:15.252-04:00  INFO 24596 --- [AlertaHospital] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-28T18:05:15.256-04:00  INFO 24596 --- [AlertaHospital] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-28T18:05:15.260-04:00  INFO 24596 --- [AlertaHospital] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-28T18:05:15.269-04:00  INFO 24596 --- [AlertaHospital] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1782684315265 with initial instances count: 2
+2026-06-28T18:05:15.280-04:00  INFO 24596 --- [AlertaHospital] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ALERTAHOSPITAL with eureka with status UP
+2026-06-28T18:05:15.280-04:00  INFO 24596 --- [AlertaHospital] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782684315280, current=UP, previous=STARTING]
+2026-06-28T18:05:15.282-04:00  INFO 24596 --- [AlertaHospital] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALERTAHOSPITAL/javier.mshome.net:AlertaHospital:8081: registering service...
+2026-06-28T18:05:15.302-04:00  INFO 24596 --- [AlertaHospital] [           main] c.e.A.c.alertaControllerIntegrationTest  : Started alertaControllerIntegrationTest in 13.786 seconds (process running for 15.49)
+2026-06-28T18:05:15.367-04:00  INFO 24596 --- [AlertaHospital] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALERTAHOSPITAL/javier.mshome.net:AlertaHospital:8081 - registration status: 204
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (C:\Users\javie\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+2026-06-28T18:05:15.943-04:00  WARN 24596 --- [AlertaHospital] [           main] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/alertas' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+Hibernate: insert into alertas (estado,fecha_hora,mensaje,tipo) values (?,?,?,?)
+Hibernate: update alertas set estado=?,fecha_hora=?,mensaje=?,tipo=? where id_alerta=?
+Hibernate: select count(*) from alertas am1_0 where am1_0.id_alerta=?
+Hibernate: insert into alertas (estado,fecha_hora,mensaje,tipo) values (?,?,?,?)
+Hibernate: select am1_0.id_alerta,am1_0.estado,am1_0.fecha_hora,am1_0.mensaje,am1_0.tipo from alertas am1_0 where am1_0.id_alerta=?
+Hibernate: select am1_0.id_alerta,am1_0.estado,am1_0.fecha_hora,am1_0.mensaje,am1_0.tipo from alertas am1_0
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.06 s -- in com.example.AlertaHospital.controller.alertaControllerIntegrationTest
+[INFO] Running com.example.AlertaHospital.service.alertaServiceTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.394 s -- in com.example.AlertaHospital.service.alertaServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ AlertaHospital ---
+[INFO] Building jar: C:\Users\javie\Downloads\Hospital-Microservicios-master-1\AlertaHospital\target\AlertaHospital-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.2.0:repackage (repackage) @ AlertaHospital ---
+[INFO] Replacing main artifact C:\Users\javie\Downloads\Hospital-Microservicios-master-1\AlertaHospital\target\AlertaHospital-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\javie\Downloads\Hospital-Microservicios-master-1\AlertaHospital\target\AlertaHospital-0.0.1-SNAPSHOT.jar.original
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ AlertaHospital ---
+[INFO] Installing C:\Users\javie\Downloads\Hospital-Microservicios-master-1\AlertaHospital\pom.xml to C:\Users\javie\.m2\repository\com\example\AlertaHospital\0.0.1-SNAPSHOT\AlertaHospital-0.0.1-SNAPSHOT.pom
+[INFO] Installing C:\Users\javie\Downloads\Hospital-Microservicios-master-1\AlertaHospital\target\AlertaHospital-0.0.1-SNAPSHOT.jar to C:\Users\javie\.m2\repository\com\example\AlertaHospital\0.0.1-SNAPSHOT\AlertaHospital-0.0.1-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  31.419 s
+[INFO] Finished at: 2026-06-28T18:05:22-04:00
+[INFO] ------------------------------------------------------------------------
